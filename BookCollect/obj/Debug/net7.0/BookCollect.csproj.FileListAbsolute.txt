@@ -74,3 +74,4 @@ C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\refint\BookC
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.pdb
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.genruntimeconfig.cache
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\ref\BookCollect.dll
+C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.sourcelink.json

@@ -23,10 +23,10 @@ namespace BookCollect.Controllers
             return Ok(allBooks);    
         }
 
-        [HttpPost("add-book")]
-        public IActionResult AddBook([FromBody] BookVM book)
+        [HttpPost("add-book-with-Author")]
+        public IActionResult AddBook([FromBody]BookVM book)
         {
-            _bookService.Add(book);
+            _bookService.AddBookWithAuthor(book);
             return Ok();
         }
 

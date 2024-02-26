@@ -1,0 +1,346 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BookCollect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\data\\viewmodels\\bookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\data\\viewmodels\\bookvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\models\\publisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\models\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\models\\book_author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\controllers\\pulishercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\controllers\\pulishercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\data\\viewmodels\\publishervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\data\\viewmodels\\publishervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\data\\viewmodels\\aurthorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\data\\viewmodels\\aurthorvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Migrations\\20240226150130_New book migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BookCollect\\Migrations\\20240226150130_New book migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\data\\appdbinitalizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\data\\appdbinitalizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\services\\publisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\services\\publisherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|c:\\users\\user\\source\\repos\\bookcollect\\bookcollect\\migrations\\20240226150627_new book migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}|BookCollect\\BookCollect.csproj|solutionrelative:bookcollect\\migrations\\20240226150627_new book migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookCollect\\Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T17:38:12.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\BookVM.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Data\\ViewModels\\BookVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\BookVM.cs",
+              "RelativeToolTip": "BookCollect\\Data\\ViewModels\\BookVM.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-14T13:34:46.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Book.cs",
+              "RelativeToolTip": "BookCollect\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:05:55.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Author.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Models\\Author.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Author.cs",
+              "RelativeToolTip": "BookCollect\\Models\\Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T12:53:54.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Book_Author.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Book_Author.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Models\\Book_Author.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Book_Author.cs",
+              "RelativeToolTip": "BookCollect\\Models\\Book_Author.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T12:57:45.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Publisher.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Publisher.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Models\\Publisher.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Models\\Publisher.cs",
+              "RelativeToolTip": "BookCollect\\Models\\Publisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T11:58:52.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Program.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Program.cs",
+              "RelativeToolTip": "BookCollect\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAmwBUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:12:07.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BookCollect\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:22:27.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\BookService.cs",
+              "RelativeToolTip": "BookCollect\\Services\\BookService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T17:40:04.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\AuthorService.cs",
+              "RelativeToolTip": "BookCollect\\Services\\AuthorService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T13:41:52.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "BookCollect\\Controllers\\AuthorController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T14:11:33.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PublisherVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\PublisherVM.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Data\\ViewModels\\PublisherVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\PublisherVM.cs",
+              "RelativeToolTip": "BookCollect\\Data\\ViewModels\\PublisherVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T14:31:56.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PulisherController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\PulisherController.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Controllers\\PulisherController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Controllers\\PulisherController.cs",
+              "RelativeToolTip": "BookCollect\\Controllers\\PulisherController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T15:15:12.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240226150627_New book migration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Migrations\\20240226150627_New book migration.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Migrations\\20240226150627_New book migration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Migrations\\20240226150627_New book migration.cs",
+              "RelativeToolTip": "BookCollect\\Migrations\\20240226150627_New book migration.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAAACkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:06:27.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AurthorVM.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\AurthorVM.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Data\\ViewModels\\AurthorVM.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\ViewModels\\AurthorVM.cs",
+              "RelativeToolTip": "BookCollect\\Data\\ViewModels\\AurthorVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T13:43:37.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240226150130_New book migration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Migrations\\20240226150130_New book migration.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Migrations\\20240226150130_New book migration.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Migrations\\20240226150130_New book migration.cs",
+              "RelativeToolTip": "BookCollect\\Migrations\\20240226150130_New book migration.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-26T15:01:31.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbInitalizer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\AppDbInitalizer.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Data\\AppDbInitalizer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Data\\AppDbInitalizer.cs",
+              "RelativeToolTip": "BookCollect\\Data\\AppDbInitalizer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwA0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-13T16:35:20.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PublisherService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\PublisherService.cs",
+              "RelativeDocumentMoniker": "BookCollect\\Services\\PublisherService.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\Services\\PublisherService.cs",
+              "RelativeToolTip": "BookCollect\\Services\\PublisherService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T13:38:36.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\appsettings.json",
+              "RelativeDocumentMoniker": "BookCollect\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BookCollect\\BookCollect\\appsettings.json",
+              "RelativeToolTip": "BookCollect\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-13T16:19:22.998Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

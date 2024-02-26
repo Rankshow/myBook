@@ -1,0 +1,155 @@
+[
+  {
+    "ContainingType": "BookCollect.Controllers.AuthorController",
+    "Method": "AddAuthor",
+    "RelativePath": "api/author/add-author",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "author",
+        "Type": "BookCollect.Data.ViewModels.AurthorVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.AuthorController",
+    "Method": "GetAuthorsWithBook",
+    "RelativePath": "api/author/get-author-with-books-by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.BookController",
+    "Method": "AddBook",
+    "RelativePath": "api/books/add-book-with-Author",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "book",
+        "Type": "BookCollect.Data.ViewModels.BookVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.BookController",
+    "Method": "GetBooks",
+    "RelativePath": "api/books/all-books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.BookController",
+    "Method": "Delete",
+    "RelativePath": "api/books/DeleteById/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.BookController",
+    "Method": "GetById",
+    "RelativePath": "api/books/getById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.BookController",
+    "Method": "Update",
+    "RelativePath": "api/books/updateById/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "book",
+        "Type": "BookCollect.Data.ViewModels.BookVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "Method": "AddPublisher",
+    "RelativePath": "api/publishers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publisher",
+        "Type": "BookCollect.Data.ViewModels.PublisherVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "Method": "GetAll",
+    "RelativePath": "api/publishers/all-publisher",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "Method": "GetPublisherData",
+    "RelativePath": "api/publishers/get-publisher-books-with-authors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

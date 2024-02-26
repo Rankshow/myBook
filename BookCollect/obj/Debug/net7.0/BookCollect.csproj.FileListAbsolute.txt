@@ -68,10 +68,10 @@ C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\staticwebass
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.BookCollect.props
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\staticwebassets.pack.json
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\scopedcss\bundle\BookCollect.styles.css
-C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.csproj.CopyComplete
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.dll
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\refint\BookCollect.dll
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.pdb
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.genruntimeconfig.cache
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\ref\BookCollect.dll
 C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookCollect.sourcelink.json
+C:\Users\User\source\repos\BookCollect\BookCollect\obj\Debug\net7.0\BookColl.A7A1ECE1.Up2Date

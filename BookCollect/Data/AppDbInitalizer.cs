@@ -21,7 +21,6 @@ namespace BookCollect.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 4,
                         Genre = "Biography",
-                        Author = "First Author",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now,
                     },
@@ -32,7 +31,6 @@ namespace BookCollect.Data
                         IsRead = false,
                         Rate = 4,
                         Genre = "Biography",
-                        Author = "First Author",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now,
                     });

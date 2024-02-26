@@ -22,7 +22,7 @@ namespace BookCollect.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BookCollect.Models.Book", b =>
+            modelBuilder.Entity("BookCollect.Models.Author", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -30,9 +30,22 @@ namespace BookCollect.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Author")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+                });
+
+            modelBuilder.Entity("BookCollect.Models.Book", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CoverUrl")
                         .IsRequired()
@@ -75,6 +88,29 @@ namespace BookCollect.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("BookCollect.Models.Book_Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("Book_Authors");
+                });
+
             modelBuilder.Entity("BookCollect.Models.Publisher", b =>
                 {
                     b.Property<int>("Id")
@@ -89,7 +125,7 @@ namespace BookCollect.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Publisher");
+                    b.ToTable("Publishers");
                 });
 
             modelBuilder.Entity("BookCollect.Models.Book", b =>
@@ -99,6 +135,35 @@ namespace BookCollect.Migrations
                         .HasForeignKey("PublisherId");
 
                     b.Navigation("Publisher");
+                });
+
+            modelBuilder.Entity("BookCollect.Models.Book_Author", b =>
+                {
+                    b.HasOne("BookCollect.Models.Author", "Author")
+                        .WithMany("Book_Authors")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BookCollect.Models.Book", "Book")
+                        .WithMany("Book_Authors")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Book");
+                });
+
+            modelBuilder.Entity("BookCollect.Models.Author", b =>
+                {
+                    b.Navigation("Book_Authors");
+                });
+
+            modelBuilder.Entity("BookCollect.Models.Book", b =>
+                {
+                    b.Navigation("Book_Authors");
                 });
 
             modelBuilder.Entity("BookCollect.Models.Publisher", b =>

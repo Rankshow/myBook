@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "author",
-        "Type": "BookCollect.Data.ViewModels.AurthorVM",
+        "Type": "BookCollect.Services.ViewModels.AurthorVM",
         "IsRequired": true
       }
     ],
@@ -41,7 +41,7 @@
     "Parameters": [
       {
         "Name": "book",
-        "Type": "BookCollect.Data.ViewModels.BookVM",
+        "Type": "BookCollect.Services.ViewModels.BookVM",
         "IsRequired": true
       }
     ],
@@ -104,7 +104,7 @@
       },
       {
         "Name": "book",
-        "Type": "BookCollect.Data.ViewModels.BookVM",
+        "Type": "BookCollect.Services.ViewModels.BookVM",
         "IsRequired": true
       }
     ],
@@ -113,14 +113,14 @@
   {
     "ContainingType": "BookCollect.Controllers.PulisherController",
     "Method": "AddPublisher",
-    "RelativePath": "api/publishers",
+    "RelativePath": "api/publishers/add-publisher",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "publisher",
-        "Type": "BookCollect.Data.ViewModels.PublisherVM",
+        "Type": "BookCollect.Services.ViewModels.PublisherVM",
         "IsRequired": true
       }
     ],
@@ -138,8 +138,40 @@
   },
   {
     "ContainingType": "BookCollect.Controllers.PulisherController",
+    "Method": "DeletePublisherDataById",
+    "RelativePath": "api/publishers/delete-publisher-id/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PulisherController",
     "Method": "GetPublisherData",
     "RelativePath": "api/publishers/get-publisher-books-with-authors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "Method": "GetPublisherById",
+    "RelativePath": "api/publishers/get-publisher-by-id/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

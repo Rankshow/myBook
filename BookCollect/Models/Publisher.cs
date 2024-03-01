@@ -6,6 +6,6 @@
         public string Name { get; set; } = string.Empty;
 
         //Navigation properties
-        public ICollection<Book>? Books { get; set;}
+        public virtual ICollection<Book>? Books { get; set;}
     }
 }

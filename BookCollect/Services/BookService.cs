@@ -1,6 +1,6 @@
 ﻿using BookCollect.Data;
-using BookCollect.Data.ViewModels;
 using BookCollect.Models;
+using BookCollect.Services.ViewModels;
 
 namespace BookCollect.Services
 {

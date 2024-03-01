@@ -1,7 +1,6 @@
-﻿using BookCollect.Data.ViewModels;
+﻿using BookCollect.Exceptions;
 using BookCollect.Services;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
+using BookCollect.Services.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookCollect.Controllers
@@ -16,13 +15,20 @@ namespace BookCollect.Controllers
             _publisherService = publisherService;
         }
 
-        [HttpPost]
+        [HttpPost("add-publisher")]
         public IActionResult AddPublisher([FromBody] PublisherVM publisher)
         {
-            _publisherService.AddPublisher(publisher);
-            return Ok();
+            try
+            {
+               var newPublisher = _publisherService.AddPublisher(publisher);
+                return Created(nameof(AddPublisher), newPublisher);
+            }
+            catch (PublisherNameException ex) 
+            {
+                return BadRequest($"{ex.Message}, Publisher name: {ex.Publishername}");
+            }
         }
-
+         
         [HttpGet("all-publisher")]
         public IActionResult GetAll() 
         { 
@@ -30,11 +36,44 @@ namespace BookCollect.Controllers
             return Ok(allPublisher);
         }
 
+        [HttpGet("get-publisher-by-id/{id}")]
+        public IActionResult GetPublisherById(int id)
+        {
+            //throw new Exception("This is an exception that will be handled by middleware");
+
+            var _response = _publisherService.GetPublisherById(id);
+            if (_response != null)
+            {
+                return Ok(_response);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+
         [HttpGet("get-publisher-books-with-authors/{id}")]
         public IActionResult GetPublisherData(int id) 
         { 
-            var response = _publisherService.GetPublisherData(id);
-            return Ok(response);
+            var _response = _publisherService.GetPublisherData(id);
+            return Ok(_response);
+        }
+
+        [HttpDelete("delete-publisher-id/{id}")]
+        public IActionResult DeletePublisherDataById(int id) 
+        {
+            //Use all global exception handling
+            //Remove this try catch from your controller...
+            try
+            {
+                _publisherService.DeletePublisherDataById(id);
+                return Ok();
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
     }

@@ -14,7 +14,7 @@
 
         //Navigation property
         public int PulisherId { get; set; }
-        public Publisher? Publisher { get; set; }
+        public virtual Publisher? Publisher { get; set; }
 
         //many to many
         public List<Book_Author>? Book_Authors { get; set; }

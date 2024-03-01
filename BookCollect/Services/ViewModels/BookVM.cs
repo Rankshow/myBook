@@ -1,4 +1,4 @@
-﻿namespace BookCollect.Data.ViewModels
+﻿namespace BookCollect.Services.ViewModels
 {
     public class BookVM
     {

@@ -1,5 +1,5 @@
-﻿using BookCollect.Data.ViewModels;
-using BookCollect.Services;
+﻿using BookCollect.Services;
+using BookCollect.Services.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;

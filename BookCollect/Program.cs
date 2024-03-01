@@ -1,5 +1,6 @@
 
 using BookCollect.Data;
+using BookCollect.Exceptions;
 using BookCollect.Services;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -37,6 +38,10 @@ namespace BookCollect
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
+            //Exception Handling
+            app.ConfigurationBuildInExceptionHandler();
+            //app.ConfigureCustomExceptionHandler();
+
 
             //Added seed to container
             AppDbInitalizer.Seed(app);

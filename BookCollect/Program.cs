@@ -1,9 +1,8 @@
-
 using BookCollect.Data;
 using BookCollect.Exceptions;
 using BookCollect.Services;
 using Microsoft.EntityFrameworkCore;
-using System;
+using Serilog;
 
 namespace BookCollect
 {
@@ -13,6 +12,20 @@ namespace BookCollect
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var configuration = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+                //Serilog configuration file
+                Log.Logger = new LoggerConfiguration()
+                    .ReadFrom.Configuration(configuration)
+                    .CreateLogger();
+          
+
+            //Serilog Configuration
+            //Log.Logger = new LoggerConfiguration()
+            //   .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day )
+            //    .CreateLogger();
+
             // Add services to the container.
 
             builder.Services.AddControllers();
@@ -21,10 +34,23 @@ namespace BookCollect
             builder.Services.AddSwaggerGen();
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")
-            ));
+            )); 
             builder.Services.AddTransient<BookService>();
             builder.Services.AddTransient<AuthorService>(); 
-            builder.Services.AddTransient<PublisherService>(); 
+            builder.Services.AddTransient<PublisherService>();
+            builder.Services.AddSerilog();
+
+           
+            // Inject Version of Apiversioning
+            //builder.Services.AddApiVersioning(config =>
+            //{
+            //    config.DefaultApiVersion = new ApiVersion(1, 0);
+            //    config.AssumeDefaultVersionWhenUnspecified = true;
+
+            //    config.ApiVersionReader = new HeaderApiVersionReader("custom-version-header");
+            //}
+            //)
+
 
             var app = builder.Build();
 
@@ -35,13 +61,15 @@ namespace BookCollect
                 app.UseSwaggerUI();
             }
 
+            //Serilog
+            app.UseSerilogRequestLogging();
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
             //Exception Handling
             app.ConfigurationBuildInExceptionHandler();
             //app.ConfigureCustomExceptionHandler();
-
 
             //Added seed to container
             AppDbInitalizer.Seed(app);

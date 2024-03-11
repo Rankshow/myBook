@@ -111,7 +111,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "ContainingType": "BookCollect.Controllers.PublisherController",
     "Method": "AddPublisher",
     "RelativePath": "api/publishers/add-publisher",
     "HttpMethod": "POST",
@@ -127,7 +127,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "ContainingType": "BookCollect.Controllers.PublisherController",
     "Method": "GetAll",
     "RelativePath": "api/publishers/all-publisher",
     "HttpMethod": "GET",
@@ -137,7 +137,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "ContainingType": "BookCollect.Controllers.PublisherController",
     "Method": "DeletePublisherDataById",
     "RelativePath": "api/publishers/delete-publisher-id/{id}",
     "HttpMethod": "DELETE",
@@ -153,7 +153,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "ContainingType": "BookCollect.Controllers.PublisherController",
     "Method": "GetPublisherData",
     "RelativePath": "api/publishers/get-publisher-books-with-authors/{id}",
     "HttpMethod": "GET",
@@ -169,7 +169,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookCollect.Controllers.PulisherController",
+    "ContainingType": "BookCollect.Controllers.PublisherController",
     "Method": "GetPublisherById",
     "RelativePath": "api/publishers/get-publisher-by-id/{id}",
     "HttpMethod": "GET",
@@ -180,6 +180,42 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookCollect.Models.Publisher",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookCollect.Controllers.PublisherController",
+    "Method": "GetAllPublishers",
+    "RelativePath": "api/publishers/gets-all-publishers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sortBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

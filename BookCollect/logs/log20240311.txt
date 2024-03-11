@@ -1,0 +1,32 @@
+2024-03-11 14:37:25.809 +01:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Books] AS [b]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-11 14:37:26.615 +01:00 [INF] Now listening on: https://localhost:7211
+2024-03-11 14:37:26.616 +01:00 [INF] Now listening on: http://localhost:5043
+2024-03-11 14:37:26.944 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-11 14:37:26.946 +01:00 [INF] Hosting environment: Development
+2024-03-11 14:37:26.946 +01:00 [INF] Content root path: C:\Users\User\source\repos\BookCollect\BookCollect
+2024-03-11 14:37:27.803 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7211/swagger/index.html - -
+2024-03-11 14:37:28.381 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7211/swagger/index.html - - - 200 - text/html;charset=utf-8 667.2687ms
+2024-03-11 14:37:28.465 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7211/_framework/aspnetcore-browser-refresh.js - -
+2024-03-11 14:37:28.466 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7211/_vs/browserLink - -
+2024-03-11 14:37:28.500 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7211/_framework/aspnetcore-browser-refresh.js - - - 200 12354 application/javascript;+charset=utf-8 35.1395ms
+2024-03-11 14:37:28.586 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7211/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 120.3232ms
+2024-03-11 14:37:28.672 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7211/swagger/v1/swagger.json - -
+2024-03-11 14:37:28.914 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7211/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 242.7237ms
+2024-03-11 14:37:40.197 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7211/api/publishers/all-publisher - -
+2024-03-11 14:37:40.235 +01:00 [INF] Executing endpoint 'BookCollect.Controllers.PublisherController.GetAll (BookCollect)'
+2024-03-11 14:37:40.290 +01:00 [INF] Route matched with {action = "GetAll", controller = "Publisher"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller BookCollect.Controllers.PublisherController (BookCollect).
+2024-03-11 14:37:40.306 +01:00 [INF] This is getting all the list of the publishers
+2024-03-11 14:37:40.425 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name]
+FROM [Publishers] AS [p]
+2024-03-11 14:37:40.562 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BookCollect.Models.Publisher, BookCollect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-11 14:37:40.613 +01:00 [INF] Executed action BookCollect.Controllers.PublisherController.GetAll (BookCollect) in 311.7527ms
+2024-03-11 14:37:40.614 +01:00 [INF] Executed endpoint 'BookCollect.Controllers.PublisherController.GetAll (BookCollect)'
+2024-03-11 14:37:40.618 +01:00 [INF] HTTP GET /api/publishers/all-publisher responded 200 in 402.8664 ms
+2024-03-11 14:37:40.633 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7211/api/publishers/all-publisher - - - 200 - application/json;+charset=utf-8 435.2683ms

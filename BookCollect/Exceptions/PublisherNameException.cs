@@ -2,12 +2,12 @@
 {
     public class PublisherNameException : Exception
     {
-        public string Publishername { get; set; } = string.Empty;
+        public string PublisherName { get; set; } = string.Empty;
         public PublisherNameException()
         {
             
         }
-        public PublisherNameException( string message) : base(message) 
+        public PublisherNameException( string message ) : base(message) 
         {
             
         }
@@ -18,7 +18,7 @@
         }
         public PublisherNameException(string message, string publisherName): this(message)
         {
-            Publishername = publisherName;
+            PublisherName = publisherName;
         }
     }
 }

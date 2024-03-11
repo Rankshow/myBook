@@ -1,6 +1,8 @@
-﻿using BookCollect.Data;
+﻿using BookCollect.ActionResult;
+using BookCollect.Data;
 using BookCollect.Exceptions;
 using BookCollect.Models;
+using BookCollect.Models.Pagination;
 using BookCollect.Services.ViewModels;
 using System.Text.RegularExpressions;
 
@@ -84,14 +86,19 @@ namespace BookCollect.Services
             return _publisher ?? new Publisher();
         }
 
-        public void DeletePublisherDataById(int id)
+        public CustomActionResult DeletePublisherDataById(int id)
         {
             var publisherId = _appDbContext.Publishers.FirstOrDefault(n => n.Id == id);
 
             if (publisherId != null)
             {
+                var _responseObj = new CustomActionResultVM()
+                {
+                    Publisher = publisherId
+                };
                 _appDbContext.Remove(publisherId);
                 _appDbContext.SaveChanges();
+                return new CustomActionResult(_responseObj);
             }
             else
             {
@@ -100,6 +107,36 @@ namespace BookCollect.Services
         }
 
         private bool StringStartWithNumber(string name) => (Regex.IsMatch(name, @"^\d"));
+
+        //Implement Sorting, filtering and pagination to the list of the publisher 
+        public List<Publisher> GetAllPublishers(string sortBy, string search, int? pageNumber)
+        {
+           var allPublisher = _appDbContext.Publishers.OrderBy( n => n.Name).ToList();
+
+            if(!string.IsNullOrEmpty(sortBy))
+            {
+                switch (sortBy) 
+                {
+                    case "name_desc":
+                        allPublisher = allPublisher.OrderByDescending( n => n.Name).ToList();    
+                        break;
+                    default:
+                        break;
+
+                }
+            }
+            //filtering all publisher
+            if(string.IsNullOrEmpty(search))
+            {
+               allPublisher = allPublisher.Where( m => m.Name.Contains(search, StringComparison.CurrentCultureIgnoreCase)).ToList();   
+            }
+
+            //Paging
+            int pageSize = 5;
+            allPublisher = PaginatedList<Publisher>.Create(allPublisher.AsQueryable(), pageNumber ?? 1, pageSize);
+
+            return allPublisher;
+        }
     }
 }
  

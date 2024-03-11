@@ -1,50 +1,63 @@
-﻿using BookCollect.Exceptions;
+﻿using BookCollect.Models;
 using BookCollect.Services;
 using BookCollect.Services.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+//using Microsoft.Extensions.Logging;
 
 namespace BookCollect.Controllers
 {
     [Route("api/publishers")]
     [ApiController]
-    public class PulisherController : ControllerBase
+    public class PublisherController : ControllerBase
     {
         private readonly PublisherService _publisherService;
-        public PulisherController(PublisherService publisherService)
+        private readonly ILogger<PublisherController> _logger;
+        public PublisherController(PublisherService publisherService, ILogger<PublisherController> logger)
         {
             _publisherService = publisherService;
+            _logger = logger;
         }
 
-        [HttpPost("add-publisher")]
-        public IActionResult AddPublisher([FromBody] PublisherVM publisher)
+        //Get the list of the publisher by sorting
+        [HttpGet("gets-all-publishers")]
+        public IActionResult GetAllPublishers(string sortBy, string search, int pageNumber) 
         {
             try
             {
-               var newPublisher = _publisherService.AddPublisher(publisher);
-                return Created(nameof(AddPublisher), newPublisher);
+                var result = _publisherService.GetAllPublishers(sortBy, search, pageNumber);
+                return Ok(result);
             }
-            catch (PublisherNameException ex) 
+            catch (Exception) 
             {
-                return BadRequest($"{ex.Message}, Publisher name: {ex.Publishername}");
+                return BadRequest("Sorry, We could not load the publishers");
             }
+        }
+        [HttpPost("add-publisher")]
+        public IActionResult AddPublisher([FromBody] PublisherVM publisher)
+        {
+
+            var newPublisher = _publisherService.AddPublisher(publisher);
+            return Created(nameof(AddPublisher), newPublisher);
         }
          
         [HttpGet("all-publisher")]
         public IActionResult GetAll() 
-        { 
+        {
+            _logger.LogInformation("This is getting all the list of the publishers");
+
             var allPublisher = _publisherService.GetAll();
             return Ok(allPublisher);
         }
 
         [HttpGet("get-publisher-by-id/{id}")]
-        public IActionResult GetPublisherById(int id)
+        public ActionResult<Publisher> GetPublisherById(int id)
         {
             //throw new Exception("This is an exception that will be handled by middleware");
 
-            var _response = _publisherService.GetPublisherById(id);
+            var _response = _publisherService.GetPublisherById(id) ;
             if (_response != null)
             {
-                return Ok(_response);
+                return _response;
             }
             else
             {

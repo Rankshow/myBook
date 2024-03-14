@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookCollect", "BookCollect\BookCollect.csproj", "{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookCollect", "BookCollect\BookCollect.csproj", "{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherServices", "bookCollect-tests\PublisherServices.csproj", "{864C49C5-7AAD-4780-BEA4-8DC9D9A5F98E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A65B6D32-EAC9-4D91-BD34-6FC6F5E7BD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864C49C5-7AAD-4780-BEA4-8DC9D9A5F98E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864C49C5-7AAD-4780-BEA4-8DC9D9A5F98E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864C49C5-7AAD-4780-BEA4-8DC9D9A5F98E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864C49C5-7AAD-4780-BEA4-8DC9D9A5F98E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

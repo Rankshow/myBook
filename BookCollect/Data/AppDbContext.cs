@@ -14,6 +14,7 @@ namespace BookCollect.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new BookAuthorConfiguration());
+            modelBuilder.ApplyConfiguration(new LogConfiguration());
         }
 
         public DbSet<Book> Books { get; set; }

@@ -182,3 +182,5 @@ C:\Users\User\source\repos\BookCollect\bookCollect-tests\obj\Debug\net7.0\refint
 C:\Users\User\source\repos\BookCollect\bookCollect-tests\obj\Debug\net7.0\PublisherServices.pdb
 C:\Users\User\source\repos\BookCollect\bookCollect-tests\obj\Debug\net7.0\PublisherServices.genruntimeconfig.cache
 C:\Users\User\source\repos\BookCollect\bookCollect-tests\obj\Debug\net7.0\ref\PublisherServices.dll
+C:\Users\User\source\repos\BookCollect\bookCollect-tests\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\User\source\repos\BookCollect\bookCollect-tests\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

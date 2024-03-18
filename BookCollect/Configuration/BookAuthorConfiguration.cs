@@ -19,6 +19,7 @@ namespace BookCollect.Configuration
                 .HasOne(b => b.Author)
                 .WithMany(bs => bs.Book_Authors)
                 .HasForeignKey(r => r.AuthorId);
+
         }
     }
 }

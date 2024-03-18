@@ -1,8 +1,13 @@
 using BookCollect.Data;
 using BookCollect.Exceptions;
+using BookCollect.Models;
 using BookCollect.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Text;
 
 namespace BookCollect
 {
@@ -12,12 +17,12 @@ namespace BookCollect
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            var configuration = new ConfigurationBuilder()
+            var Configuration = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
-                //Serilog configuration file
-                Log.Logger = new LoggerConfiguration()
-                    .ReadFrom.Configuration(configuration)
+            //Serilog configuration file
+            Serilog.Log.Logger = new LoggerConfiguration()
+                    .ReadFrom.Configuration(Configuration)
                     .CreateLogger();
           
 
@@ -40,7 +45,7 @@ namespace BookCollect
             builder.Services.AddTransient<PublisherService>();
             builder.Services.AddSerilog();
 
-           
+
             // Inject Version of Apiversioning
             //builder.Services.AddApiVersioning(config =>
             //{
@@ -51,6 +56,36 @@ namespace BookCollect
             //}
             //)
 
+            //Add Identity
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
+
+            //Add Authentication
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            //Add Jwt bearer
+            .AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.RequireHttpsMetadata = false;
+                options.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["JWT:Secret"])),
+
+                    ValidateIssuer = true,
+                    ValidIssuer = Configuration["JWT:Issuer"],
+
+                    ValidateAudience = true,
+                    ValidAudience = Configuration["JWT:Audience"]
+
+                };
+            });
 
             var app = builder.Build();
 

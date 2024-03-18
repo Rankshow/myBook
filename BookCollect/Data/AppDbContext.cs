@@ -1,11 +1,12 @@
 ﻿using BookCollect.Configuration;
 using BookCollect.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookCollect.Data
 {
-    public class AppDbContext : DbContext
-    {
+    public class AppDbContext : IdentityDbContext<ApplicationUser>
+    {   
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         {
@@ -15,6 +16,8 @@ namespace BookCollect.Data
         {
             modelBuilder.ApplyConfiguration(new BookAuthorConfiguration());
             modelBuilder.ApplyConfiguration(new LogConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Book> Books { get; set; }

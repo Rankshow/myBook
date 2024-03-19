@@ -101,7 +101,10 @@ namespace BookCollect
 
             app.UseHttpsRedirection();
 
+            //Authentication and Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
+
             //Exception Handling
             app.ConfigurationBuildInExceptionHandler();
             //app.ConfigureCustomExceptionHandler();

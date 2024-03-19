@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BookCollect.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/authentications/login-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "BookCollect.Services.ViewModels.Authentications.LoginVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BookCollect.Controllers.AuthorController",
     "Method": "AddAuthor",
     "RelativePath": "api/author/add-author",

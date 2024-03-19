@@ -1,6 +1,7 @@
 ﻿using BookCollect.Models;
 using BookCollect.Services;
 using BookCollect.Services.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 //using Microsoft.Extensions.Logging;
 
@@ -8,6 +9,7 @@ namespace BookCollect.Controllers
 {
     [Route("api/publishers")]
     [ApiController]
+    [Authorize]
     public class PublisherController : ControllerBase
     {
         private readonly PublisherService _publisherService;
